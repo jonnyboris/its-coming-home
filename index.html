@@ -139,6 +139,34 @@
         .flag {
             width: 140px;
         }
+
+        @keyframes flash {
+            0% {color: #ce1b00;}
+            49% {color: #ce1b00;}
+            50% {color: #fff;}
+            99% {color: #fff;}
+            100% {color: #ce1b00;}
+        }
+
+        @keyframes other-flash {
+            0% {color: #fff;}
+            49% {color: #fff;}
+            50% {color: #ce1b00;}
+            99% {color: #ce1b00;}
+            100% {color: #fff;}
+        }
+
+        .flash span {
+            margin: 0 -5px;
+        }
+
+        .flash span:nth-child(odd) {
+            animation: flash 1s linear infinite;
+        }
+
+        .flash span:nth-child(even) {
+            animation: other-flash 1s linear infinite;
+        }
     </style>
 </head>
 <body>
@@ -154,7 +182,16 @@
 <img class="falling-thing cup" src="img/OnItsWayHome.png" />
 
 <div class="container">
-    <h1>'Coming Home' Status: <span>IT'S</span></h1>
+    <h1>
+        'Coming Home' Status:
+        <span class="flash">
+            <span>I</span>
+            <span>T</span>
+            <span>'</span>
+            <span>S</span>
+        </span>
+    </h1>
+
     <h2>Home time in</h2>
     <h2 id="hometime"></h2>
 </div>
