@@ -157,6 +157,24 @@ h2 {
     animation-delay: 9s, 1.5s
 }
 
+.falling-thing:nth-of-type(8) {
+    left: 34%;
+    -webkit-animation-delay: 4s, 1.5s;
+    animation-delay: 4s, 1.5s
+}
+
+.falling-thing:nth-of-type(9) {
+    right: 34%;
+    -webkit-animation-delay: 2s, 1.5s;
+    animation-delay: 2s, 1.5s
+}
+
+.falling-thing:nth-of-type(10) {
+    left: 40%;
+    -webkit-animation-delay: 7s, 1.5s;
+    animation-delay: 7s, 1.5s
+}
+
 
 .harry {
     width: 196.6px;
