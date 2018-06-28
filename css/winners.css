@@ -11,9 +11,9 @@ html, body {
 }
 
 body {
-    background: no-repeat center center url(img/back.jpg);
+    background: url(../img/back.jpg) no-repeat center center fixed;
     background-size: cover;
-    overflow: hidden;
+
 
 }
 
@@ -23,11 +23,16 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-height: 100vh;
+}
+
+iframe {
+    height: 315px;
 }
 
 h1 {
@@ -195,4 +200,16 @@ h2 {
 
 .flash span:nth-child(even) {
     animation: other-flash 1s linear infinite;
+}
+
+
+#sound {
+    font-size: 4em;
+    color: #ffffff;
+    text-shadow: 0px 0px 20px #000;
+    padding: 40px;
+}
+
+.off .fa-volume-up, .on .fa-volume-mute{
+   display: none;
 }

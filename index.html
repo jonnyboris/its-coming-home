@@ -6,7 +6,8 @@
     <link rel="icon" href="favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="winners.css" />
+    <link rel="stylesheet" type="text/css" href="css/winners.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121560095-1"></script>
     <script>
@@ -19,10 +20,6 @@
 </head>
 <body>
 
-
-
-<audio src="3lion.mp3" autoplay></audio>
-
 <img class="falling-thing harry" src="img/SirHarry.png" />
 <img class="falling-thing logo" src="img/logo.gif" />
 <img class="falling-thing cup" src="img/pewpewpew.png" />
@@ -31,7 +28,15 @@
 <img class="falling-thing cup" src="img/OnItsWayHome.png" />
 <img class="falling-thing cup" src="img/boss.png" />
 
+<audio src="3lions.mp3" id="tune"></audio>
 <div class="container">
+
+
+    <div id="sound" class="off">
+        <i class="far fa-volume-mute"></i>
+        <i class="far fa-volume-up"></i>
+    </div>
+
     <h1>
         'Coming Home' Status:
         <span class="flash">
@@ -44,16 +49,14 @@
 
     <h2>Home time in</h2>
     <h2 id="hometime"></h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_sbOd_6FQ0U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
-<script src="totally-a-bundle.js"></script>
-<script>
-    var $e = document.getElementById('hometime');
-    setInterval(function () {
-        var time = moment("2018-07-15 18:00:00").countdown().toString();
-        $e.innerText = time;
-    }, 1000)
-</script>
+
+<script src="js/totally-a-bundle.js"></script>
+<script src="js/ingerland.js"></script>
+
 </body>
 </html>
 
