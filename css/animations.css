@@ -1,0 +1,43 @@
+@keyframes flash {
+  0% {
+    color: #ce1b00; }
+  49% {
+    color: #ce1b00; }
+  50% {
+    color: #fff; }
+  99% {
+    color: #fff; }
+  100% {
+    color: #ce1b00; } }
+@keyframes other-flash {
+  0% {
+    color: #fff; }
+  49% {
+    color: #fff; }
+  50% {
+    color: #ce1b00; }
+  99% {
+    color: #ce1b00; }
+  100% {
+    color: #fff; } }
+@keyframes fall {
+  0% {
+    top: -50%; }
+  100% {
+    top: 100%; } }
+@keyframes shake {
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(80px); }
+  100% {
+    transform: translateX(0px); } }
+@keyframes shake-opposite {
+  0% {
+    transform: translateX(80px); }
+  50% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(80px); } }
+
+/*# sourceMappingURL=animations.css.map */
