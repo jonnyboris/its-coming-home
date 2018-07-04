@@ -1,0 +1,52 @@
+@keyframes flash {
+  0% {color: #ce1b00;}
+  49% {color: #ce1b00;}
+  50% {color: #fff;}
+  99% {color: #fff;}
+  100% {color: #ce1b00;}
+}
+
+@keyframes other-flash {
+  0% {color: #fff;}
+  49% {color: #fff;}
+  50% {color: #ce1b00;}
+  99% {color: #ce1b00;}
+  100% {color: #fff;}
+}
+
+@keyframes fall {
+  0% {transform: translateY(0%)}
+  90% {opacity: 1}
+  100% {transform: translateY(200%); opacity: 0}
+}
+
+@mixin m-shake($max, $min) {
+  0% {transform: translateX($min)}
+  50% {transform: translateX($max)}
+  100% {transform: translateX($min)}
+}
+
+@keyframes shake {
+  @include m-shake(80px, 0px);
+}
+
+@keyframes shake-opposite {
+  @include m-shake(0px, 80px);
+}
+
+@keyframes shake-massive {
+  @include m-shake(200px, -200px);
+}
+
+@keyframes shake-massive-opposite {
+  @include m-shake(-200px, 200px);
+}
+
+@keyframes shake-big {
+  @include m-shake(100px, -100px);
+}
+
+@keyframes shake-small {
+  @include m-shake(40px, 0);
+}
+

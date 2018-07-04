@@ -14,8 +14,6 @@ html, body {
 body {
     background: url(../img/back.jpg) no-repeat center center fixed;
     background-size: cover;
-
-
 }
 
 .container {
@@ -103,16 +101,8 @@ h2 {
     position: fixed;
     top: -50%;
     z-index: 1;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     cursor: default;
-    -webkit-animation-name: fall, shake;
-    -webkit-animation-duration: 10s, 3s;
-    -webkit-animation-timing-function: linear, ease-in-out;
-    -webkit-animation-iteration-count: infinite, infinite;
-    -webkit-animation-play-state: running, running;
     animation-name: fall, shake;
     animation-duration: 10s, 3s;
     animation-timing-function: linear, ease-in-out;
@@ -129,68 +119,57 @@ h2 {
 .falling-thing:nth-of-type(1) {
     left: 1%;
     -webkit-animation-delay: 0s, 0s;
-    animation-delay: 0s, 0s
-}
+    animation-delay: 0s, 0s;}
 
 .falling-thing:nth-of-type(2) {
     left: 10%;
     -webkit-animation-delay: 6s, .5s;
-    animation-delay: 6s, .5s
-}
+    animation-delay: 6s, .5s;}
 
 .falling-thing:nth-of-type(3) {
     left: 20%;
     -webkit-animation-delay: 0.5s, 2s;
-    animation-delay: 0.5s, 2s
-}
+    animation-delay: 0.5s, 2s;}
 
 .falling-thing:nth-of-type(4) {
     right: 20%;
     -webkit-animation-delay: 2s, 2s;
-    animation-delay: 2s, 2s
-}
+    animation-delay: 2s, 2s;}
 
 .falling-thing:nth-of-type(5) {
     right: 15%;
     -webkit-animation-delay: 4s, 3s;
-    animation-delay: 4s, 3s
-}
+    animation-delay: 4s, 3s;}
 
 .falling-thing:nth-of-type(6) {
     right: 25%;
     -webkit-animation-delay: 5s, 0s;
-    animation-delay: 5s, 0s
-}
+    animation-delay: 5s, 0s;}
 
 .falling-thing:nth-of-type(7) {
     left: 24%;
     -webkit-animation-delay: 9s, 1.5s;
-    animation-delay: 9s, 1.5s
-}
+    animation-delay: 9s, 1.5s;}
 
 .falling-thing:nth-of-type(8) {
     left: 34%;
     -webkit-animation-delay: 4s, 1.5s;
-    animation-delay: 4s, 1.5s
-}
+    animation-delay: 4s, 1.5s;}
 
 .falling-thing:nth-of-type(9) {
     right: 34%;
     -webkit-animation-delay: 2s, 1.5s;
-    animation-delay: 2s, 1.5s
-}
+    animation-delay: 2s, 1.5s;}
 
 .falling-thing:nth-of-type(10) {
     left: 40%;
     -webkit-animation-delay: 7s, 1.5s;
-    animation-delay: 7s, 1.5s
-}
+    animation-delay: 7s, 1.5s;}
 
 .falling-thing:nth-of-type(11) {
     left:40%;
     -webkit-animation-delay: 1s, 1.5s;
-    animation-delay: 1s, 1.5s
-}
+    animation-delay: 1s, 1.5s;}
 
 .harry {
     width: 196.6px;
