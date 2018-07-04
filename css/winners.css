@@ -186,6 +186,11 @@ h2 {
     animation-delay: 7s, 1.5s
 }
 
+.falling-thing:nth-of-type(11) {
+    left:40%;
+    -webkit-animation-delay: 1s, 1.5s;
+    animation-delay: 1s, 1.5s
+}
 
 .harry {
     width: 196.6px;
@@ -201,6 +206,10 @@ h2 {
 
 .flag {
     width: 140px;
+}
+
+.big-dick-pick {
+    width: 300px;
 }
 
 @keyframes flash {
