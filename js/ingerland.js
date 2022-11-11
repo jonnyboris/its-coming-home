@@ -3,11 +3,11 @@ var $sound = document.getElementById('sound');
 var $tune = document.getElementById('tune');
 var playing = false;
 
-var time = moment("2021-07-11 21:15:00").countdown().toString();
+var time = moment("2022-12-18 15:00:00").countdown().toString();
 $e.innerText = time;
 
 setInterval(function () {
-    var time = moment("2021-07-11 21:15:00").countdown().toString();
+    var time = moment("2022-12-18 15:00:00").countdown().toString();
     $e.innerText = time;
 }, 1000)
 
